@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "composite": true, // Requerido para usar "references" en el archivo principal
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["scripts", "server", "vite.config.ts"]
+}
